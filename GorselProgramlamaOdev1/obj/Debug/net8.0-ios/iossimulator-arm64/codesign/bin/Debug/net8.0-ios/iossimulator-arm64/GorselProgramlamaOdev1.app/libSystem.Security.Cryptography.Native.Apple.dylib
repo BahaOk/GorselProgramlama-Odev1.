@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/bahaok/Desktop/GorselProgramlama-Odev/GorselProgramlamaOdev1/bin/Debug/net8.0-ios/iossimulator-arm64/GorselProgramlamaOdev1.app/libSystem.Security.Cryptography.Native.Apple.dylib

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdev1.VucutKiloIndex">
+
+ <StackLayout>
+
+    <HorizontalStackLayout HorizontalOptions ="Center" Margin="20">
+    <Label
+        Text="VKI = kg / (boy*boy)"
+        TextColor="#FFE7A706"
+        FontSize ="Large"
+        />
+    </HorizontalStackLayout>
+      
+   <VerticalStackLayout Spacing="20">
+    <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+        <Label
+         x:Name="KiloLabel"
+            Text="Kilonuz (KG):"
+            VerticalOptions="Center"
+            />
+         <Entry 
+            x:Name="KiloDegeri"
+            WidthRequest="30"
+            HeightRequest="30"
+           TextChanged="vkiHesaplama"
+            >
+            </Entry>
+           
+    </HorizontalStackLayout>
+     <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+        <Label
+            Text="Boyunuz (cm):"
+            VerticalOptions="Center"
+            />
+         <Entry 
+            x:Name="BoyDegeri"
+            WidthRequest="30"
+            HeightRequest="30"
+            TextChanged="vkiHesaplama"
+         >
+  </Entry>       
+    </HorizontalStackLayout>
+   <Label x:Name="VkiLabel"
+          Text="VKI Sonucu"
+          FontSize="Large"
+          HorizontalOptions="Center"/>
+
+   </VerticalStackLayout>
+</StackLayout>
+
+</ContentPage>

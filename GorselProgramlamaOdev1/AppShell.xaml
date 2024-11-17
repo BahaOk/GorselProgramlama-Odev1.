@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GorselProgramlamaOdev1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GorselProgramlamaOdev1"
+    Shell.FlyoutBehavior="Flyout"
+    Title="GorselProgramlamaOdev1">
+  <ShellContent
+        Icon="home.png"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        
+     <ShellContent
+        Icon="calculator.png"
+        Title="KrediHesaplama"
+        ContentTemplate="{DataTemplate local:KrediHesaplama}"
+        Route="KrediHesaplama" />
+
+     <ShellContent
+        Icon="fat.png"
+        Title="Vucut Kilo Index Hesaplama"
+        ContentTemplate="{DataTemplate local:VucutKiloIndex}"
+        Route="VucutKiloIndex" />   
+
+        <ShellContent
+        Icon="book.png" 
+        Title="Yapilacaklar"
+        ContentTemplate="{DataTemplate local:Yapilacaklar}"
+        Route="Yapilacaklar" />   
+        <ShellContent
+        Icon="color" 
+        Title="Renk Olusturma"
+        ContentTemplate="{DataTemplate local:Renk}"
+        Route="Renk" /> 
+</Shell>
